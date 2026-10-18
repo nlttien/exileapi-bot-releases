@@ -3,7 +3,9 @@
 Repo này **chỉ chứa file phát hành** (AppImage). Mã nguồn: `nlttien/exileapi-rebuild` (riêng tư).
 
 ## Cài trên máy mới (Linux Nobara / Fedora)
-1. Vào **Releases** → tải `exileapi-Bot-<commit>-x86_64.AppImage` mới nhất.
+1. Vào **Releases** → tải **cả 2 file** `exileapi-Bot-<commit>-x86_64.AppImage` và `exileapi-config.json` vào **cùng 1 thư mục**
+   (`gh release download -R nlttien/exileapi-bot-releases --pattern '*.AppImage' --pattern '*.json'`).
+   AppImage tự nạp cấu hình từ file nằm cạnh nó; sửa file đó rồi mở lại là áp dụng. Không có file cạnh → dùng bản nhúng.
 2. `chmod +x exileapi-Bot-*.AppImage` → bấm đúp (hoặc `./exileapi-Bot-*.AppImage`).
 3. Lần đầu: tự cài gói thiếu (hỏi mật khẩu), thêm nhóm `input` (→ đăng xuất / đăng nhập lại rồi mở lại),
    tạo biểu tượng **exileapi Bot**, mở overlay.
